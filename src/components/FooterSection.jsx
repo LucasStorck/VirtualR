@@ -2,7 +2,7 @@ import { resourcesLinks, platformLinks, communityLinks } from "../constants";
 
 function FooterSection() {
   return (
-    <footer className="mx-24 mt-20 border-t py-10 border-neutral-200">
+    <footer className="container mx-auto mt-10 px-3 border-t py-10 border-neutral-200">
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-10">
         <div>
           <h3 className="text-md font-semibold mb-4">Resources</h3>

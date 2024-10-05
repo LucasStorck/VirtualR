@@ -3,7 +3,7 @@ import { pricingOptions } from "../constants";
 
 const PricingSection = () => {
   return (
-    <div className="mt-20">
+    <div className="container mx-auto">
       <div className="text-center">
         <span className="bf-neutral-900 text-orange-600 rounded-full h-6 text-sm font-medium px-2 py-1 uppercase">
           Prices
@@ -12,11 +12,11 @@ const PricingSection = () => {
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8">
         Our plans
       </h2>
-      <div className="flex mx-24 flex-wrap justify-center items-center gap-4">
+      <div className="flex flex-wrap justify-center items-center gap-6">
         {pricingOptions.map((option, index) => (
-          <div key={index} className="w-full sm:w-1/2 lg:w-1/4">
-            <div className="p-10 border-2 border-neutral-950 rounded-xl">
-              <p className="text-4xl mb-6">
+          <div key={index} className="w-full max-w-md">
+            <div className="p-6 border-2 border-neutral-950 rounded-md">
+              <p className="text-4xl mb-6 flex justify-center items-center">
                 {option.title}
                 {option.title == "Pro" && (
                   <span className="bg-gradient-to-r from-orange-500 to-red-600 text-transparent bg-clip-text text-sm mb-4 ml-2 italic">
@@ -25,7 +25,7 @@ const PricingSection = () => {
                 )}
               </p>
               <p className="mb-8">
-                <span className="text-5xl mt-6 mr-2">{option.price}</span>
+                <span className="text-5xl mt-6 mr-2 ">{option.price}</span>
                 <span className="text-orange-500 tracking-tighter">/Mo.</span>
               </p>
               <ul>

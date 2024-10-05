@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <div className="flex flex-col items-center mt-6 lg:mt-20">
+    <div className="container mx-auto items-center mt-6 lg:mt-20">
       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide text-black	color: rgb(0 0 0)">
         VirtualR build tools
         <span className="bg-gradient-to-r from-orange-500 to-red-700 text-transparent bg-clip-text">

@@ -4,7 +4,7 @@ import { checklistItems } from "../constants";
 
 const WorkflowSection = () => {
   return (
-    <div className="relative mt-10">
+    <div className="container mx-auto">
       <div className="text-center">
         <span className="text-orange-600 rounded-full h-6 text-sm font-medium px-2 uppercase">
           Workflow
@@ -16,11 +16,11 @@ const WorkflowSection = () => {
           coding workflow
         </span>
       </h2>
-      <div className="flex mx-12 flex-wrap justify-center">
-        <div className="p-2 w-full lg:w-1/3">
+      <div className="flex flex-wrap justify-center gap-6">
+        <div className="w-full max-w-2xl">
           <img className="rounded-xl" src={codeImg} alt="Coding" />
         </div>
-        <div className="pt-5 lg:w-1/2">
+        <div className="pt-5 max-w-2xl">
           {checklistItems.map((item, index) => (
             <div key={index} className="mx-10 flex mb-12">
               <div className="text-green-400 mx-6 p-2 justify-center items-center rounded-full">
